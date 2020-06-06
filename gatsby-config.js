@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `Coder Who Dreams`,
     author: `Saurabh Mhatre`,
-    description: `A personal blog ceovering articles on data science and machine learning`,
+    description: `A personal blog covering articles on data science and machine learning`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `saurabhnative`,
