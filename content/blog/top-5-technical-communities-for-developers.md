@@ -53,5 +53,3 @@ Slack: Popularly known for office communications, slack also has many community 
 These 5 platforms I have shared today have helped me tremendously to build new contacts and also for getting guidance from senior developers in the industry.
 
 So if you are someone looking out for help, then start staying active in a few of these platforms and simply ask your questions without feeling embarrassed even if they are simple questions. Chances are some else might be having them too and there would be someone from the online community who would surely like to help you out. That’s it for today’s short post. Hope you all find it useful 😄
-
-You can interact with me on - [LinkedIn](https://www.linkedin.com/in/saurabh-mhatre/) or [Twitter](https://twitter.com/saurabhnative)

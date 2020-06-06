@@ -13,12 +13,13 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
-        <h1
+        <h3
           style={{
-            ...scale(1.5),
+            ...scale(0.7),
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
+          className={'page-header'}
         >
           <Link
             style={{
@@ -30,7 +31,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h1>
+        </h3>
       )
     } else {
       header = (
@@ -70,6 +71,10 @@ class Layout extends React.Component {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+          {`, `}
+          <a href="https://reactjs.org/">React</a>
+           {` and `} 
+          <a href="https://www.netlify.com/">Netlify</a>
         </Footer>
       </Wrapper>
     )

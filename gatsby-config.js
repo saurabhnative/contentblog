@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Codeclassifiers Personal Blog`,
-    author: `Codeclassifiers`,
+    title: `Coder Who Dreams`,
+    author: `Saurabh Mhatre`,
     description: `A personal blog ceovering articles on data science and machine learning`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `codeclassifiers`,
+      twitter: `saurabhnative`,
     },
   },
   plugins: [
@@ -71,14 +71,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Code Who Dreams Blog`,
+        short_name: `Code Who Dreams`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/cwd-icon.png`,
       },
     },
     {

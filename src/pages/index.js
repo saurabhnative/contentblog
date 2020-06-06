@@ -3,12 +3,13 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
+import Bio from "../components/bio"
+
 import { rhythm } from "../utils/typography"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Codeclassifiers"
+    const siteTitle = "Coder Who Dreams"
     const { data } = this.props
     const posts = data.allMdx.edges
 
@@ -18,21 +19,7 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>
-          Welcome to my personal blog. <br></br>
-          Here I will try to cover articles on data science and web development.
-        </p>
-        <p>
-          You can get in touch with me on   
-          <a href="https://www.linkedin.com/in/saurabh-mhatre/"> Linkedin </a> 
-          or <a href="https://twitter.com/saurabhnative"> Twitter </a>
-        </p>
+        <Bio />
         <h2>Here's a list of some of my lastest posts:</h2>
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
@@ -61,12 +48,6 @@ class IndexPage extends React.Component {
             )
           })}
         </div>
-        <p>
-          Check out my blog section
-        </p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link>
       </Layout>
     )
   }
