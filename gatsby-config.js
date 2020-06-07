@@ -4,7 +4,7 @@ module.exports = {
     title: `Coder Who Dreams`,
     author: `Saurabh Mhatre`,
     description: `A personal blog covering articles on data science and machine learning`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://coderwhodreams.com/`,
     social: {
       twitter: `saurabhnative`,
     },
@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
