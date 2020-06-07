@@ -71,11 +71,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Code Who Dreams Blog`,
-        short_name: `Code Who Dreams`,
+        name: `Coder Who Dreams Blog`,
+        short_name: `Coder Who Dreams`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#007acc`,
         display: `minimal-ui`,
         // edit below
         icon: `content/assets/cwd-icon.png`,
