@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import CookieConsent from 'react-cookie-consent'
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -76,6 +77,14 @@ class Layout extends React.Component {
            {` and `} 
           <a href="https://www.netlify.com/">Netlify</a>
         </Footer>
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          contentStyle={{flex: "1"}}
+          style={{alignItems: "center"}}
+          cookieName="gatsby-gdpr-google-analytics">
+          {`This site uses cookies to enhance user experience `}
+        </CookieConsent>
       </Wrapper>
     )
   }
