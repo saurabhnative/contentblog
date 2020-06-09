@@ -4,7 +4,7 @@ date: 2020-06-08T17:55:01.756Z
 title: How to calculate dot product in perceptrons?
 description: How to calculate dot product in perceptrons?
 ---
-Neural networks are a collection of individuals nodes called as artificial neurons or perceptrons.
+Neural networks are a collection of individuals nodes called as artificial neurons or **perceptrons**.
 
 Each perceptron takes in an input array, multiples it with weights array and add a bias value to create a computed sum.
 
@@ -42,8 +42,9 @@ Here **np.dot** function is used to calculate dot product between the input and 
 
 ![Calculation of Dot Product](https://res.cloudinary.com/dk22rcdch/image/upload/v1591670631/Blogimages/Screenshot_2020-06-09_at_8.11.53_AM_fyqgqd.png "Calculation of Dot Product")
 
-That's it for today's short tutorial on dot product using numpy.  
+The output value from above function is fed to an activation function to calculate final value of a perceptron. I will cover various activation functions and their working in another article since it is a vast concept requiring it's own article.
 
+That's it for today's short tutorial on dot product using numpy.  
 
 Reference:
 [Neural  Networks from Scratch by SentDex](https://www.youtube.com/watch?v=tMrbN67U9d4&t=807s)
