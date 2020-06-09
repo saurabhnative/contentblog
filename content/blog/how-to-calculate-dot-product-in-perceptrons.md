@@ -31,13 +31,19 @@ bias = 2
 
 #Take dot product between weights and input 
 #and add bias to the summation value
-output = np.dot(inputs, weights) + bias
+output = np.dot(weights, inputs) + bias
 print(output)
 
 #Output:-
 4.24
 ```
 
-That's it for today's short tutorial on dot product using numpy.
+Here **np.dot** function is used to calculate dot product between the input and the weights. Internally it works as follows:
+
+![Calculation of Dot Product](https://res.cloudinary.com/dk22rcdch/image/upload/v1591670631/Blogimages/Screenshot_2020-06-09_at_8.11.53_AM_fyqgqd.png "Calculation of Dot Product")
+
+That's it for today's short tutorial on dot product using numpy.  
+
+
 Reference:
 [Neural  Networks from Scratch by SentDex](https://www.youtube.com/watch?v=tMrbN67U9d4&t=807s)
