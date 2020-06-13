@@ -4,13 +4,12 @@ date: 2020-06-13T08:24:05.143Z
 title: Exciting new features in Android 11 for developers
 description: A list of new features released in Android 11 beta for app developers to use
 ---
+![Android 11 ](https://res.cloudinary.com/dk22rcdch/image/upload/v1592042495/Blogimages/android-1869510_640_ke1eqs.jpg "Image by Pexels from Pixabay")
 ### Introduction
 
 * Android 11 beta preview got recently released by goggle and it has quite a lot of interesting new features, which developers can take advantage of while developing their applications.
 * In today's short article we are going to see a few of this features which can make your app more awesome.
 * Going by the official statement, the first Beta of Android 11 focused on three key themes: **People, Controls, and Privacy**.
-
-![Android 11 ](https://res.cloudinary.com/dk22rcdch/image/upload/v1592042495/Blogimages/android-1869510_640_ke1eqs.jpg "Image by Pexels from Pixabay")
 
 ### People
 
