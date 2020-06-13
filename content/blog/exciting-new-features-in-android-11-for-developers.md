@@ -25,7 +25,7 @@ description: A list of new features released in Android 11 beta for app develope
 
 ### Privacy
 
-* **One-time permission location permission**
+* **One-time location permission**
   * In Android 10, we had the option to grant an app two different permissions for location access:
 While Using The App or Deny. 
   * In Android 11, users will be able to grant an app, the permission to use location access only once.
