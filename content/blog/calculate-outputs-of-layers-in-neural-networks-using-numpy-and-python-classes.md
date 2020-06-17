@@ -9,7 +9,7 @@ description: A short article on how to calculate layer outputs using numpy class
   * For just a brief recap here are the essential parts of a node in neural network
     ![Perceptron parts](https://res.cloudinary.com/dk22rcdch/image/upload/v1592035333/Blogimages/Perceptron.001_mw0jtq.jpg "Parts of perceptron")
   * We calculate the output using the formula
-    ![Calculation  of output](https://res.cloudinary.com/dk22rcdch/image/upload/v1592357045/Blogimages/Screenshot_2020-06-17_at_6.53.42_AM_lyfb5v.png "Calculation of output")
+    ![Calculation  of output](https://res.cloudinary.com/dk22rcdch/image/upload/v1592357943/Blogimages/Screenshot_2020-06-17_at_7.08.38_AM_mets9x.png "Calculation of output")
   * In today's article, we are going to understand how to calculate the output value in neural networks using numpy and python class.
 * Let's say we have a set of inputs in for our neural network as follows:
 
