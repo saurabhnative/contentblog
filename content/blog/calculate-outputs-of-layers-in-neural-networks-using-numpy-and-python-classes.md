@@ -34,8 +34,8 @@ X = [[1,2,5,7],
       self.biases = np.zeros((1, n_neurons))  
 ```
 
-In line no 2 we initialised a class for our layer. The `__init__` method helps us to initialise the attributes in a class. 
-The first variable we define in the init method is weights array with random values. We make use of np.random method to initialise it with random values. 
+In line no 2 we initialised a class for our layer. The `__init__` method helps us to initialise the attributes in a class.   \
+The first variable we define in the init method is weights array with random values. We make use of np.random method to initialise it with random values. \
 Next we initialise the bias values in an array with zero values initially.
 
 * Now we can calculate the output of the layer with the formula shown above as follows:
