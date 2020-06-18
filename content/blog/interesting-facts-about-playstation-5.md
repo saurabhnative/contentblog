@@ -6,7 +6,7 @@ description: Some interesting facts about newly released Playstation 5
 ---
 ![Playstation Image](https://res.cloudinary.com/dk22rcdch/image/upload/v1592446786/Blogimages/bench-576129_1280_nzti71.png "Image by OpenClipart-Vectors from Pixabay ")
 
-* With the unveiling of Playstation 5 by Sony, most of us are eagerly waiting to see first hand reviews and gameplay footage of latest games on the next gen console.\
+* With the unveiling of Playstation 5 by Sony, most of us are eagerly waiting to see first hand reviews and gameplay footage of latest games on the next gen console. 
   Here are 5 interesting facts about PS5:  
 * **It's huge!**
   * PlayStation 5 is significantly larger than the PlayStation 4. It’s also taller than the Xbox Series X.  
@@ -14,7 +14,7 @@ description: Some interesting facts about newly released Playstation 5
     “This gen is little supercomputers. While the 7nm process delivers amazing heat performance for the power, the power is very extreme. This tech is still so fresh it throws a lot of heat so we need room to dissipate,”
   * Reddit user u/GREBO7 posted an [image](https://www.reddit.com/r/XboxSeriesX/comments/h7cmty/updated_console_sizes_compared/) which compared the sizes of many of the recent PlayStation and Xbox consoles. These include the PlayStation 4, PlayStation 4 Pro, Xbox Series X, Xbox One X and others. He used the standard sizes of the disc drives and USB ports to estimate the size of the PlayStation 5 system and it seems significantly larger than other consoles in this [image](https://preview.redd.it/m68gq2vi8e451.png?width=2868&format=png&auto=webp&s=9e00cbac6967e6cc65d7af41da370e66b2f31fbb)
 * **A completely redesigned UI**
-  * Matt MacLaurin has further stated that "User interface will be a completely new, a 100 percent overhaul of the PS4 UI and some very different new concepts. The UI will be pragmatic and will be based on a new visual language.\
+  * Matt MacLaurin has further stated that "User interface will be a completely new, a 100 percent overhaul of the PS4 UI and some very different new concepts. The UI will be pragmatic and will be based on a new visual language.
     The major focus is speed: “Most important is experience goals measured in milliseconds across the entire UI"
 * **Specs and Power**
   * Playstation 5 contains an octa-core AMD Zen 2 CPU with a custom Radeon GPU, which stacks it up very closely to the Xbox Series X which means the PS5 will be capable of ray tracing. 
