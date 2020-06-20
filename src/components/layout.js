@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import CookieConsent from 'react-cookie-consent'
-
+import DarkModeToggle from './darkmodetoggle';
 import { rhythm, scale } from "../utils/typography"
-
+import '../utils/global.css'
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -14,6 +14,7 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
+        <FlexWrapper>
         <h3
           style={{
             ...scale(0.7),
@@ -33,15 +34,18 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h3>
+        <DarkModeToggle />
+        </FlexWrapper>
       )
     } else {
       header = (
-        <h3
+        <FlexWrapper>
+          <h3
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
           }}
-        >
+          >
           <Link
             style={{
               boxShadow: `none`,
@@ -52,11 +56,20 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h3>
+          </h3>
+          <DarkModeToggle />  
+        </FlexWrapper>
       )
     }
     return (
       <Wrapper>
+        <div
+          style={{
+            backgroundColor: 'var(--bg)',
+            color: 'var(--textNormal)',
+            transition: 'color 0.2s ease-out, background 0.2s ease-out',
+          }}
+        >
         <div
           style={{
             marginLeft: `auto`,
@@ -85,6 +98,7 @@ class Layout extends React.Component {
           cookieName="gatsby-gdpr-google-analytics">
           {`This site uses cookies to enhance user experience `}
         </CookieConsent>
+        </div>
       </Wrapper>
     )
   }
@@ -97,6 +111,10 @@ const Wrapper = styled.div`
 const Footer = styled.footer`
   text-align: center;
   margin: 24px;
+`
+
+const FlexWrapper = styled.div`
+  display: flex
 `
 
 export default Layout
