@@ -1,7 +1,7 @@
 ---
 path: maths-randon-in-javascript
 date: 2020-07-13T15:53:56.371Z
-title: Understanding the randomness behind Math.random() function
+title: Understanding the math behind Math.random() function
 description: Let understand the underlying implementation of Math.random() function
 ---
 ![Cover Image](https://res.cloudinary.com/dk22rcdch/image/upload/v1594747472/Blogimages/coverphoto_lz8klr.jpg "Cover Image")
