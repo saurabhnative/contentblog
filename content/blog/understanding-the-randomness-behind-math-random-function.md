@@ -6,14 +6,13 @@ description: Let understand the underlying implementation of Math.random() funct
 ---
 ![Photo by fotografierende from Pexels](https://res.cloudinary.com/dk22rcdch/image/upload/v1594747472/Blogimages/coverphoto_lz8klr.jpg "Cover Image:-Photo by fotografierende from Pexels")Photo by fotografierende from Pexels
 
-
 * **Introduction**
   * If you are a web developer then I am pretty sure you must have used or come across **Math.random()** in JavaScript at least once. Most of us know that it gives us back a Pseudo-Random Number viz. a number which might seem random but at some level is deterministic based on the function used.
 * **Research**
   * So the first article which I came across about this function was from Chrome's V8 engine's blog on the [implementation of Math.random()](https://v8.dev/blog/math-random) which goes into detail about the algorithms used to generate random number in the V8 engine.
 * **Deep Dive**
       - Now the interesting thing to realise here is Javascript language does not have a specific implementation of this function by itself. There are broad specs specified by ECMAScript, based on which each browser can have thier own implementation for generating random numbers.
-      - Initially, most of the browsers used to have some variation of popular pseudo-random number generation algorithms in their internal engines. In 2015, all the browsers shifted from older algorithms to a standard algorithm called **xorshift128+**(Adding `**+**` at the end definitely makes it sound cool 😌).
+      - Initially, most of the browsers used to have some variation of popular pseudo-random number generation algorithms in their internal engines. In 2015, all the browsers shifted from older algorithms to a standard algorithm called **xorshift128+**(Adding **`+`** at the end definitely makes it sound cool 😌).
       - If we go through the actual c implementation of the algorithm it looks like as followed:
   * ```c
     uint64_t state0 = 1;
@@ -51,10 +50,10 @@ console.log(xorshift());
 ```
 
 * The above code written in Javascript looks a bit better but still needs a more explanation. So let's deep dive into it step by step...
-* The first two lines of the algorithm are pretty simple to understand. We initialise two seed values **_`state0`_** and **_`state1`_**.
-* Next from line 4, the real implementation of our algorithm starts. On line 5 and 6 we copy the values of our seed values into variables **_`s1`_** and **_`s0`_** for temporary manipulations. Next, on line 7 we copy the value of **_`s0`_** into **_`state0`_** variables. \
+* The first two lines of the algorithm are pretty simple to understand. We initialise two seed values _**`state0`**_ and _**`state1`**_.
+* Next from line 4, the real implementation of our algorithm starts. On line 5 and 6 we copy the values of our seed values into variables _**`s1`**_ and _**`s0`**_ for temporary manipulations. Next, on line 7 we copy the value of _**`s0`**_ into _**`state0`**_ variables. \
   At this point if we log the values of all variables they will be:\
-  **_`state0=2, state1=2, s0=2, s1= 1`_** 
+  _**`state0=2, state1=2, s0=2, s1= 1`**_ 
 * Now we come to the most important part of the algorithm...\
   **`Line 8`**`:`**`s1 ^= s1 << 23;  // SHIFT`**
 * Here first, we are performing left shift operation on variable s1, with the syntax **`s1 << 23`** where the binary equivalent of s1 input value is **`1`** , is left-shifted by 23 places. Here is a visual representation of how that operation is performed internally:
