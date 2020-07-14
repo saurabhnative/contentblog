@@ -4,11 +4,11 @@ date: 2020-07-13T15:53:56.371Z
 title: Understanding the math behind Math.random() function
 description: Let understand the underlying implementation of Math.random() function
 ---
-![Photo by fotografierende from Pexels](https://res.cloudinary.com/dk22rcdch/image/upload/v1594747472/Blogimages/coverphoto_lz8klr.jpg "Cover Image:-Photo by fotografierende from Pexels")
-<center>Photo by fotografierende from Pexels</center>
+![Photo by fotografierende from Pexels](https://res.cloudinary.com/dk22rcdch/image/upload/v1594747472/Blogimages/coverphoto_lz8klr.jpg "Cover Image:-Photo by fotografierende from Pexels")Photo by fotografierende from Pexels
+
 
 * **Introduction**
-  * If you are a web developer then l I am pretty sure you must have used or come across **Math.random()** in JavaScript at least once. Most of us know that it gives us back a Pseudo-Random Number viz. a number which might seem random but at some level is deterministic based on the function used.
+  * If you are a web developer then I am pretty sure you must have used or come across **Math.random()** in JavaScript at least once. Most of us know that it gives us back a Pseudo-Random Number viz. a number which might seem random but at some level is deterministic based on the function used.
 * **Research**
   * So the first article which I came across about this function was from Chrome's V8 engine's blog on the [implementation of Math.random()](https://v8.dev/blog/math-random) which goes into detail about the algorithms used to generate random number in the V8 engine.
 * **Deep Dive**
