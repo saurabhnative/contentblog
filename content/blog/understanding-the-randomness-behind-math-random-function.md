@@ -14,7 +14,7 @@ description: Let understand the underlying implementation of Math.random() funct
       - Now the interesting thing to realise here is Javascript language does not have a specific implementation of this function by itself. There are broad specs specified by ECMAScript, based on which each browser can have thier own implementation for generating random numbers.
       - Initially, most of the browsers used to have some variation of popular pseudo-random number generation algorithms in their internal engines. In 2015, all the browsers shifted from older algorithms to a standard algorithm called **xorshift128+**(Adding **`+`** at the end definitely makes it sound cool 😌).            
       - If we go through the actual c implementation of the algorithm it looks like as followed:
-* ```c
+ ```c
   uint64_t state0 = 1;
   uint64_t state1 = 2;
   uint64_t xorshift128plus() {
