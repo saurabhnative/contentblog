@@ -65,6 +65,6 @@ console.log(xorshift());
 * Now how the seed values are selected is dependant on the browsers and underlying engine implementations based on which the range of random values differ.
 * **Conclusion**
   * In a nutshell, all the algorithm is really doing here is taking some input, doing some binary operations on them, and giving us a random number. Although the output is quite predictable over long terms but seems pretty random for our day to day use cases. 
-* **References** : \
+* **References** :
     This concept and implementation were originally covered by:
   Daniel Simmons on [Hackernoon Blog](https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131)
