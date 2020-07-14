@@ -12,23 +12,23 @@ description: Let understand the underlying implementation of Math.random() funct
   * So the first article which I came across about this function was from Chrome's V8 engine's blog on the [implementation of Math.random()](https://v8.dev/blog/math-random) which goes into detail about the algorithms used to generate random number in the V8 engine.
 * **Deep Dive**
       - Now the interesting thing to realise here is Javascript language does not have a specific implementation of this function by itself. There are broad specs specified by ECMAScript, based on which each browser can have thier own implementation for generating random numbers.
-      - Initially, most of the browsers used to have some variation of popular pseudo-random number generation algorithms in their internal engines. In 2015, all the browsers shifted from older algorithms to a standard algorithm called **xorshift128+**(Adding **`+`** at the end definitely makes it sound cool 😌).
+      - Initially, most of the browsers used to have some variation of popular pseudo-random number generation algorithms in their internal engines. In 2015, all the browsers shifted from older algorithms to a standard algorithm called **xorshift128+**(Adding **`+`** at the end definitely makes it sound cool 😌).            
       - If we go through the actual c implementation of the algorithm it looks like as followed:
-  * ```c
-    uint64_t state0 = 1;
-    uint64_t state1 = 2;
-    uint64_t xorshift128plus() {
-      uint64_t s1 = state0;
-      uint64_t s0 = state1;
-      state0 = s0;
-      s1 ^= s1 << 23;
-      s1 ^= s1 >> 17;
-      s1 ^= s0;
-      s1 ^= s0 >> 26;
-      state1 = s1;
-      return state0 + state1;
-    }
-    ```
+* ```c
+  uint64_t state0 = 1;
+  uint64_t state1 = 2;
+  uint64_t xorshift128plus() {
+    uint64_t s1 = state0;
+    uint64_t s0 = state1;
+    state0 = s0;
+    s1 ^= s1 << 23;
+    s1 ^= s1 >> 17;
+    s1 ^= s0;
+    s1 ^= s0 >> 26;
+    state1 = s1;
+    return state0 + state1;
+  }
+  ```
 * Now as a web developer it might seem a bit daunting task to understand this algorithm in C language so let's port the same implementation to Javascript to understand it better: 
 
 ```javascript
