@@ -107,17 +107,20 @@ module.exports = {
         plugins: [
           {
             resolve: "gatsby-remark-embed-gist",
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
             options: {
-              // Optional:
-    
-              // the github handler whose gists are to be accessed
-              username: "codeclassifiers",
-    
-              // a flag indicating whether the github default gist css should be included or not
-              // default: true
-              gistDefaultCssInclude: true,
-            }
-          }
+              // This toggles the display of line numbers globally alongside the code.
+              // To use it, add the following line in gatsby-browser.js
+              // right after importing the prism color scheme:
+              //  require("prismjs/plugins/line-numbers/prism-line-numbers.css")
+              // Defaults to false.
+              // If you wish to only show line numbers on certain code blocks,
+              // leave false and use the {numberLines: true} syntax below
+              showLineNumbers: true,
+            },
+          },
         ]
       }
     }
