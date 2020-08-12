@@ -101,5 +101,25 @@ module.exports = {
         environments: ['production', 'development']
       },
     },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              // Optional:
+    
+              // the github handler whose gists are to be accessed
+              username: "codeclassifiers",
+    
+              // a flag indicating whether the github default gist css should be included or not
+              // default: true
+              gistDefaultCssInclude: true,
+            }
+          }
+        ]
+      }
+    }
   ],
 }
