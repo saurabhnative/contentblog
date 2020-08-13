@@ -51,14 +51,21 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-vscode`,
-          },
-          {
             resolve: `gatsby-remark-copy-linked-files`,
           },
           {
             resolve: `gatsby-remark-smartypants`,
           },
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              includeDefaultCss: true,
+              gistDefaultCssInclude: true,
+            }
+          },
+          {
+            resolve: `gatsby-remark-vscode`
+          }
         ],
         plugins: [`gatsby-remark-images`],
       },
@@ -70,6 +77,7 @@ module.exports = {
         trackingId: `UA-168738942-1`,
       },
     },
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -101,28 +109,5 @@ module.exports = {
         environments: ['production', 'development']
       },
     },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-embed-gist",
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              // This toggles the display of line numbers globally alongside the code.
-              // To use it, add the following line in gatsby-browser.js
-              // right after importing the prism color scheme:
-              //  require("prismjs/plugins/line-numbers/prism-line-numbers.css")
-              // Defaults to false.
-              // If you wish to only show line numbers on certain code blocks,
-              // leave false and use the {numberLines: true} syntax below
-              showLineNumbers: true,
-            },
-          },
-        ]
-      }
-    }
   ],
 }

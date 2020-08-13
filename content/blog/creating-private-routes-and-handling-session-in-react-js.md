@@ -16,10 +16,11 @@ We can set-up backend using this excellent and simple article on dev.to: Backend
 
 Now if you observe the response for login/registration APIs in the article you can find that there is an access-token returned in response:
 
-```javascript
+```javascript {numberLines}
  res.status(200).json({
                         token
                     });
 ```
 We need to save this token on client side for managing user session. So after receiving response from registration API we need to make the below change
+
 `gist:codeclassifiers/907575c5bb21ba54019b7a08cda7a590#inputsubmission.js`
