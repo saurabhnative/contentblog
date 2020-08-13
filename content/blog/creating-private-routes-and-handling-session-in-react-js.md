@@ -6,6 +6,8 @@ description: >-
   Learn how store access tokens, build private routes and handle session in
   react.js
 ---
+<center><img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1597337348/Blogimages/coverimage_yxrp7t.png" alt="drawing" height="300"/></center>
+
 * In the previous [tutorial](https://medium.com/technoetics/create-basic-login-forms-using-react-js-hooks-and-bootstrap-2ae36c15e551), we covered how to create basic login and registration forms using react.js
 * In today's tutorial, we are going to cover how to protect internal app pages from unauthorised access using client-side session token.
 * We can set-up backend using this excellent and simple article on dev.to: [Backend Setup](https://dev.to/dipakkr/implementing-authentication-in-nodejs-with-express-and-jwt-codelab-1-j5i) and make changes as shown in the final API route as shown in this file: [Github](https://github.com/codeclassifiers/quiz-app-backend/blob/master/routes/users.js)
@@ -42,6 +44,6 @@ description: >-
   `gist:codeclassifiers/324a38d9135fbff7eff304c46f1904bf#headerupdated.js`
 * We have defined a `renderLogout` method on line 3 which displays a logout button in the header section if the user is on the home page. The `handleLogout` function on line 12 takes care of destroying session token on the client-side and redirecting user to the login page.
 * This completes a short tutorial on creating private routes and handling authentication on client-side using react.js. 
-  The complete source code for this section can be found here: [Github](https://github.com/codeclassifiers/loginforms/tree/develop-authenticated).  
+  The complete source code for this section can be found here: [Github](https://github.com/codeclassifiers/loginforms/tree/develop-authenticated).\
   If you would like to see how to use this complete setup on a sample app then you can check out the quiz app which I created in this repo: [Github](https://github.com/codeclassifiers/quiz-app-frontend)
 * If you have any doubts in this tutorial then reach out to me on [LinkedIn](https://www.linkedin.com/in/saurabh-mhatre/) or [Twitter](https://twitter.com/saurabhnative)
