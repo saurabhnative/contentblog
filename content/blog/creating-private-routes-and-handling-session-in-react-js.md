@@ -6,11 +6,11 @@ description: >-
   Learn how store access tokens, build private routes and handle session in
   react.js
 ---
-- In the previous tutorial, we covered how to create basic login and registration forms using react.js
+- In the previous [tutorial](https://medium.com/technoetics/create-basic-login-forms-using-react-js-hooks-and-bootstrap-2ae36c15e551), we covered how to create basic login and registration forms using react.js
 
 - In today's tutorial, we are going to cover how to protect internal app pages from unauthorised access using client-side session token.
 
-- We can set-up backend using this excellent and simple article on dev.to: Backend Setup and make changes as shown in the final API route as shown in this file: Github
+- We can set-up backend using this excellent and simple article on dev.to: [Backend Setup](https://dev.to/dipakkr/implementing-authentication-in-nodejs-with-express-and-jwt-codelab-1-j5i) and make changes as shown in the final API route as shown in this file: [Github](https://github.com/codeclassifiers/quiz-app-backend/blob/master/routes/users.js)
 
 - Now if you observe the response for login/registration APIs in the article you can find that there is an access-token returned in response:
 
@@ -24,8 +24,8 @@ description: >-
 
 `gist:codeclassifiers/85c61cfd3887d3a5963ef11c09cf022c#responsestore.js`
 
-- `localStorage.setItem` is used to store the token received from backend API to browser's local storage.
-Similar change needs to be made in Login API in Login.js file after receiving the response from server as shown on line 34 here: [Login.js](https://github.com/codeclassifiers/loginforms/blob/develop-authenticated/src/components/LoginForm/LoginForm.js)   
+- `localStorage.setItem` is used to store the token received from backend API to browser's local storage.    
+- Similar change needs to be made in Login API in Login.js file after receiving the response from server as shown on line 34 here: [Login.js](https://github.com/codeclassifiers/loginforms/blob/develop-authenticated/src/components/LoginForm/LoginForm.js)   
 - Next create a utils folder and file called PrivateRoute.js as shown below:
 
 ![Private Route](https://res.cloudinary.com/dk22rcdch/image/upload/v1597167097/Blogimages/PrivateRoute_sv6ejk.png "Private Route")   
