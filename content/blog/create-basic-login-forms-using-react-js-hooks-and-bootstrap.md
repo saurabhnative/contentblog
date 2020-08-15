@@ -33,3 +33,7 @@ description: Create login pages using react.js
   `gist:codeclassifiers/00618f8a8bd17a6de89f94ea7b2fbf0d#Header.js`
 * Now let’s import the Header component in App.js file and modify App.js as follows:
     `gist:codeclassifiers/79210006f116a0461f99f270a0b9de8d#App.js`
+* If the code changes are correct you will be able to see the header in the webpage as shown below:- 
+  ![Register app image](https://res.cloudinary.com/dk22rcdch/image/upload/v1597505075/Blogimages/1_WezyWkBnv84UDfko3oo9aw_ekbd5l.png "Register App image")  
+* Next, let us add the registration form for the users. Create a RegistrationForm folder in components and add the below code to create user inputs with labels:-
+  `gist:codeclassifiers/6cf04ff6d7ce54cb1e4a729aa8ad81cd#RegistrationForm.js`  
