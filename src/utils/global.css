@@ -30,3 +30,8 @@ code:not(.grvsc-code) {
   border-radius: 5px;
   padding: 2px 7px;
 }
+
+body.dark code:not(.grvsc-code) {
+  color: black;
+}
+
