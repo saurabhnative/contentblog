@@ -17,7 +17,7 @@ description: Create login pages using react.js
   ```
 * If everything goes well you should get the below screen:-
   ![launch app image](https://res.cloudinary.com/dk22rcdch/image/upload/v1597504249/Blogimages/1_fS_ANudeXp3j18tHYv3JdA_b2on9i.png "App Launch image")
-* Now open the loginforms folder in vscode and you will find mainly two folders viz src and public. Open index.html in the public folder and make the following edits:-
+* Now open the loginforms folder in vscode and you will find mainly two folders viz src and public. Open index.html in the public folder and make the following edits:-  
    First, change the text within title and meta tags as per your requirements:-
   `gist:codeclassifiers/5c7dca7de4f329460357776753609e55#index.html`
 * We are going to use bootstrap 4 in our project so head over to there official docs page here and add CSS and js links from the page to index.html as follows:-
@@ -57,15 +57,15 @@ description: Create login pages using react.js
     You will need to create and set up a backend server for handling API requests. You can check out an excellent article on creating them using Node.js and MongoDB here:- [Backend set up article](https://dev.to/dipakkr/implementing-authentication-in-nodejs-with-express-and-jwt-codelab-1-j5i). Just keep one thing in mind that we are not using `username` field in frontend so if you are following above tutorial then do take care to remove the same. You can find a repo related to these changes here: [Github](https://github.com/codeclassifiers/quiz-app-backend/blob/master/routes/users.js).
   `gist:codeclassifiers/d37c85766183b7b651f6e701ed758d8e#sendDetailsToserver.js`
 * We are making a post request to the server where `API_BASE_URL` is defined in the constants file.
-  The complete code of RegistrationForm.js file can be found here:-\
+  The complete code of RegistrationForm.js file can be found here:-   
   [Github Article](https://github.com/codeclassifiers/loginforms/blob/master/src/components/RegistrationForm/RegistrationForm.js)
-* Next we will set-up [react-router](https://reacttraining.com/react-router/web/guides/quick-start) for displaying login and register pages at two different address paths. First, install react-router-dom npm module by entering the below command in cmd/terminal:-
+* Next we will set-up [react-router](https://reacttraining.com/react-router/web/guides/quick-start) for displaying login and register pages at two different address paths. First, install react-router-dom npm module by entering the below command in cmd/terminal:-  
   `npm install react-router-dom`
 * Next set up react-router in App.js file of the project:-
   `gist:codeclassifiers/4d0b7e82811909cdad6536af183df441#App.js`
 * Now if we run npm start command, then we should see the registration form in the home page route.
 * Next, we create a login form by following almost a similar procedure and we can add a redirect link below both the forms to switch between login and registration. Finally, on receiving a success response from the server we can redirect the user to the home page.
-* All these different routes need to be added in `App.js` file. We have also included a small AlertComponent to show errors while handling user inputs:-\
+* All these different routes need to be added in `App.js` file. We have also included a small AlertComponent to show errors while handling user inputs:-   
   `gist:codeclassifiers/606759228c831cbaaa2438c01712b3e8#AlertComponent.js`
 * If you look at line no 3 you will find a props parameter passed in the component. props are values passed from the parent component to the child component. We can make use of props to update the component state based on changes in the parent component.
 * Here we have made use of another react.js hook called useEffect on line no 12. It is useful for updating component level state variables based on changes in props received from the parent component. Basically it listens for changes in prop values and then executes code written within it based on those changes.
