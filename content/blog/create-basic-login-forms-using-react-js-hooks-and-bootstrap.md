@@ -66,4 +66,20 @@ description: Create login pages using react.js
   `gist:codeclassifiers/4d0b7e82811909cdad6536af183df441#App.js`
 * Now if we run npm start command, then we should see the registration form in the home page route.
 * Next, we create a login form by following almost a similar procedure and we can add a redirect link below both the forms to switch between login and registration. Finally, on receiving a success response from the server we can redirect the user to the home page.
-* All these different routes need to be added in App.js file. We have also included a small AlertComponent to show errors while handling user inputs:-
+* All these different routes need to be added in `App.js` file. We have also included a small AlertComponent to show errors while handling user inputs:-\
+  `gist:codeclassifiers/606759228c831cbaaa2438c01712b3e8#AlertComponent.js`
+* If you look at line no 3 you will find a props parameter passed in the component. props are values passed from the parent component to the child component. We can make use of props to update the component state based on changes in the parent component.
+* Here we have made use of another react.js hook called useEffect on line no 12. It is useful for updating component level state variables based on changes in props received from the parent component. Basically it listens for changes in prop values and then executes code written within it based on those changes.
+* You can find the complete source code for this project till this point on the Github repo:-
+  [Codeclasifiers loginforms](https://github.com/codeclassifiers/loginforms/tree/develop-basic-code)  
+* Feel free to check it out for reference, fork it and submit your own modifications via PRs anytime.
+* Now I haven’t covered storing session cookie/token from the backend or created private authentication based routes in this tutorial mainly because I wanted to focus on UI and concept of react.js hooks. This means the homepage route is accessible even without login which defeats the purpose of having user authentication.
+* In the second part, we will see how to store access token received from backend APIs locally and how to make the home route private. Check out the article here:\
+  [Part 2: Creating private routes and handling session in react.js](https://coderwhodreams.com/blog/creating-private-routes-and-handling-session-in-react-js/)
+* Bonus tips:-\
+  **Input Icons**\
+  You can add icons before input forms to make UI of the forms more appealing to the user.\
+  **Session Management**\
+  You need to manage client level sessions for the user in case of showing private routes. Do research about it a bit on the react-router site and try to create some of your own or check out the second article in this series to learn more: Article on the private routes.  
+* **Parting Notes**\
+  Thank you for reading. I hope I could teach you something new today. You can follow me on [Twitter](https://twitter.com/saurabhnative) or [LinkedIn](https://www.linkedin.com/in/saurabh-mhatre/) in case you need any guidance or have any doubts related to frontend development.
