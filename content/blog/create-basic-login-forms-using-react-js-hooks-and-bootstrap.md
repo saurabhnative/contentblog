@@ -10,7 +10,7 @@ description: Create login pages using react.js
 
 * So let’s begin the journey…
 * Some prerequisites for the project are that you need to have [node.js](https://nodejs.org/en/) and an editor like [Vscode](https://code.visualstudio.com/) installed on your system. Optionally you can also install the [yarn](https://classic.yarnpkg.com/en/docs/install) package manager. Now the first thing we need to do set up a new react.js project, so open up your cmd/terminal and run the below commands to create a new project using the [create-react-app](https://github.com/facebook/create-react-app) module and start your project:-
-* ```javascript {numberLines: true}
+* ```javascript
   npx create-react-app loginforms
   cd loginforms
   npm start
@@ -51,7 +51,7 @@ description: Create login pages using react.js
 * So we first define handleSubmitClick function where we check if the password inputs match and call sendDetailsToServer function to make a backend API request else we will show an error to user that passwords do not match.
 * axios is an npm module that is used to make API requests to the backend. You can find more information about it [here](https://www.npmjs.com/package/axios). Let’s add it to our project before proceeding further. 
 * First go back to terminal/cmd and make sure in the project directory. Run the below command to add axios npm module:-  
-* ```javascript {numberLines: true}
+* ```javascript
    npm install --save axios
   ```
 * Now let’s go back to defining our sendDetailsToServer function:-
@@ -74,12 +74,12 @@ description: Create login pages using react.js
   [Codeclasifiers loginforms](https://github.com/codeclassifiers/loginforms/tree/develop-basic-code)  
 * Feel free to check it out for reference, fork it and submit your own modifications via PRs anytime.
 * Now I haven’t covered storing session cookie/token from the backend or created private authentication based routes in this tutorial mainly because I wanted to focus on UI and concept of react.js hooks. This means the homepage route is accessible even without login which defeats the purpose of having user authentication.
-* In the second part, we will see how to store access token received from backend APIs locally and how to make the home route private. Check out the article here:\
+* In the second part, we will see how to store access token received from backend APIs locally and how to make the home route private. Check out the article here:
   [Part 2: Creating private routes and handling session in react.js](https://coderwhodreams.com/blog/creating-private-routes-and-handling-session-in-react-js/)
-* Bonus tips:-\
-  **Input Icons**\
-  You can add icons before input forms to make UI of the forms more appealing to the user.\
-  **Session Management**\
+* Bonus tips:-
+  **Input Icons**
+  You can add icons before input forms to make UI of the forms more appealing to the user.
+  **Session Management**
   You need to manage client level sessions for the user in case of showing private routes. Do research about it a bit on the react-router site and try to create some of your own or check out the second article in this series to learn more: Article on the private routes.  
-* **Parting Notes**\
+* **Parting Notes**
   Thank you for reading. I hope I could teach you something new today. You can follow me on [Twitter](https://twitter.com/saurabhnative) or [LinkedIn](https://www.linkedin.com/in/saurabh-mhatre/) in case you need any guidance or have any doubts related to frontend development.
