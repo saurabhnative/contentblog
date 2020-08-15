@@ -58,4 +58,12 @@ description: Create login pages using react.js
     You will need to create and set up a backend server for handling API requests. You can check out an excellent article on creating them using Node.js and MongoDB here:- [Backend set up article](https://dev.to/dipakkr/implementing-authentication-in-nodejs-with-express-and-jwt-codelab-1-j5i). Just keep one thing in mind that we are not using `username` field in frontend so if you are following above tutorial then do take care to remove the same. You can find a repo related to these changes here: [Github](https://github.com/codeclassifiers/quiz-app-backend/blob/master/routes/users.js).
   `gist:codeclassifiers/d37c85766183b7b651f6e701ed758d8e#sendDetailsToserver.js`
 * We are making a post request to the server where `API_BASE_URL` is defined in the constants file.
-  The complete code of RegistrationForm.js file can be found here:-
+  The complete code of RegistrationForm.js file can be found here:-\
+  [Github Article](https://github.com/codeclassifiers/loginforms/blob/master/src/components/RegistrationForm/RegistrationForm.js)
+* Next we will set-up [react-router](https://reacttraining.com/react-router/web/guides/quick-start) for displaying login and register pages at two different address paths. First, install react-router-dom npm module by entering the below command in cmd/terminal:-
+  `npm install react-router-dom`
+* Next set up react-router in App.js file of the project:-
+  `gist:codeclassifiers/4d0b7e82811909cdad6536af183df441#App.js`
+* Now if we run npm start command, then we should see the registration form in the home page route.
+* Next, we create a login form by following almost a similar procedure and we can add a redirect link below both the forms to switch between login and registration. Finally, on receiving a success response from the server we can redirect the user to the home page.
+* All these different routes need to be added in App.js file. We have also included a small AlertComponent to show errors while handling user inputs:-
