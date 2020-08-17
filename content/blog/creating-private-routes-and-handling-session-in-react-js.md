@@ -8,7 +8,7 @@ description: >-
 ---
 <center><img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1597337348/Blogimages/coverimage_yxrp7t.png" alt="drawing" height="300"/></center>
 
-* In the previous [tutorial](https://medium.com/technoetics/create-basic-login-forms-using-react-js-hooks-and-bootstrap-2ae36c15e551), we covered how to create basic login and registration forms using react.js
+* In the previous [tutorial](https://coderwhodreams.com/blog/create-basic-login-forms-using-react-js-hooks-and-bootstrap/), we covered how to create basic login and registration forms using react.js
 * In today's tutorial, we are going to cover how to protect internal app pages from unauthorised access using client-side session token.
 * We can set-up backend using this excellent and simple article on dev.to: [Backend Setup](https://dev.to/dipakkr/implementing-authentication-in-nodejs-with-express-and-jwt-codelab-1-j5i) and make changes as shown in the final API route as shown in this file: [Github](https://github.com/codeclassifiers/quiz-app-backend/blob/master/routes/users.js)
 * Now if you observe the response for login/registration APIs in the backend APIs article above, you can find that there is an access-token returned in the response:
