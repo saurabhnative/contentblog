@@ -5,7 +5,7 @@ title: 'Interview Series 1: Advantages and disadvantages of using CSS preprocess
 description: In this article learn the advantages and disadvantages of CSS preprocessors
 ---
 <center>
-<img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1597723781/Blogimages/webdev_juqaex.png" height=400/>     
+<img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1597723781/Blogimages/webdev_juqaex.png" height="400"/>     
 <div>Image by gTheMesh from Pixabay</div>
 </center>   
 
