@@ -42,4 +42,4 @@ Source files may be small, but the generated CSS could be huge which can increas
   - **Extra Tooling and developer inconvenience**  
 CSS preprocessors require extra tooling and knowledge about using the preprocessor properly. This preprocessors to be understood and their corresponding libraries need to be maintained and upgraded from time to time.
 
-
+* This completes the first part of the interview series questions. We will cover some more topics and questions in upcoming articles. You can connect with me on [LinkedIn](https://www.linkedin.com/in/saurabh-mhatre/) or [Twitter](https://twitter.com/saurabhnative) for getting guidance or solving doubts related to frontend development.
