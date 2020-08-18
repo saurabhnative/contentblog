@@ -9,8 +9,8 @@ description: In this article learn the advantages and disadvantages of CSS prepr
 <div>Image by gTheMesh from Pixabay</div>
 </center>   
 
-* A popular frontend development question asked in interviews is _'Do you use CSS preprocessors? What are their advantages and disadvantages?'_
-  Let's learn about CSS preprocessors and how to answer this question in interviews.
+* A popular frontend development question asked in interviews is _'Do you use CSS preprocessors? What are their advantages and disadvantages?'_  
+  In today's article let's learn about CSS preprocessors and how to answer this question in interviews.
 
 * A CSS preprocessor is a program/utility which lets us generate CSS from the preprocessor's own unique syntax. Most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. 
 * **Introduction**\
