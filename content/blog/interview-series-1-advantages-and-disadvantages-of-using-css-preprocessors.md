@@ -5,13 +5,13 @@ title: 'Interview Series 1: Advantages and disadvantages of using CSS preprocess
 description: In this article learn the advantages and disadvantages of CSS preprocessors
 ---
 <center>
-<img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1597723781/Blogimages/webdev_juqaex.png" height="400"/>     
-<div>Image by gTheMesh from Pixabay</div>
+
+![Image by gTheMesh from Pixabay](https://res.cloudinary.com/dk22rcdch/image/upload/v1597723781/Blogimages/webdev_juqaex.png "Image by gTheMesh from Pixabay")
+<div>Image Source: Pixabay</div>
 </center>   
 
-* A popular frontend development question asked in interviews is _'Do you use CSS preprocessors? What are their advantages and disadvantages?'_  
+* A popular frontend development question asked in interviews is _'Do you use CSS preprocessors? What are their advantages and disadvantages?'_\
   In today's article let's learn about CSS preprocessors and how to answer this question in interviews.
-
 * A CSS preprocessor is a program/utility which lets us generate CSS from the preprocessor's own unique syntax. Most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. 
 * **Introduction**\
   These features make the CSS structure more readable and easier to maintain especially for large production level projects.\
@@ -25,7 +25,7 @@ description: In this article learn the advantages and disadvantages of CSS prepr
    Same code with SASS syntax\
    `gist:codeclassifiers/7093ba199994f25f72e8a9b87b305eb8#sample.sass`
    Same code, when compiled to normal CSS, leads to:\
-   `gist:codeclassifiers/6793a416bf981ba2754c88ad07d82fab#sample.css`\  
+   `gist:codeclassifiers/6793a416bf981ba2754c88ad07d82fab#sample.css`\\
    As we can same colour code can be used twice using SCSS syntax by declaring variables. You can find more information on the topic here: [SASS docs](https://sass-lang.com/guide)
 * **Advantages of using CSS Preprocessors** 
   * **Option to add variables, mixins and functions for code reusability**\
