@@ -6,8 +6,8 @@ description: In this article learn the advantages and disadvantages of CSS prepr
 ---
 <center>
 
-![Image by gTheMesh from Pixabay](https://res.cloudinary.com/dk22rcdch/image/upload/v1597723781/Blogimages/webdev_juqaex.png "Image by gTheMesh from Pixabay")
-<div>Image Source: Pixabay</div>
+![Image by gTheMesh from Pixabay](https://res.cloudinary.com/dk22rcdch/image/upload/v1597723781/Blogimages/webdev_juqaex.png "Image by gTheMesh from Pixabay")    
+Image Source: Pixabay
 </center>   
 
 * A popular frontend development question asked in interviews is _'Do you use CSS preprocessors? What are their advantages and disadvantages?'_\
