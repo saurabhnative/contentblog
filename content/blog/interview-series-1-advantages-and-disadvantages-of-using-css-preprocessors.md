@@ -25,7 +25,7 @@ description: In this article learn the advantages and disadvantages of CSS prepr
    Same code with SASS syntax\
    `gist:codeclassifiers/7093ba199994f25f72e8a9b87b305eb8#sample.sass`
    Same code, when compiled to normal CSS, leads to:\
-   `gist:codeclassifiers/6793a416bf981ba2754c88ad07d82fab#sample.css`\
+   `gist:codeclassifiers/6793a416bf981ba2754c88ad07d82fab#sample.css`\  
    As we can same colour code can be used twice using SCSS syntax by declaring variables. You can find more information on the topic here: [SASS docs](https://sass-lang.com/guide)
 * **Advantages of using CSS Preprocessors** 
   * **Option to add variables, mixins and functions for code reusability**\
