@@ -115,5 +115,11 @@ module.exports = {
         environments: ['production', 'development']
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-KGXCM8X"
+      }
+    }
   ],
 }
