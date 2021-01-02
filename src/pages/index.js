@@ -34,6 +34,7 @@ class IndexPage extends React.Component {
                   <Link
                     style={{ boxShadow: `none` }}
                     to={`blog${node.fields.slug}`}
+                    id="article-title"
                   >
                     {title}
                   </Link>
